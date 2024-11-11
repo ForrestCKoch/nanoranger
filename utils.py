@@ -696,7 +696,7 @@ def process_matching_5p10X(sample, outdir):
         tot += 1
         AS = read.get_tag("AS")
         all_AS.append([AS, read.flag])
-        if AS >= 14 and read.flag == 0:
+        if AS >= 16 and read.flag == 0:
             # print(read)
             name = read.query_name
             bc = read.reference_name
